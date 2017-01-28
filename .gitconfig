@@ -1,0 +1,25 @@
+[user]
+	name = andrey-abramow
+	email = abramow.andrey@gmail.com
+[core]
+	autocrlf = input
+	excludesfile = /Users/abramowandrey/.gitignore
+	editor = /usr/bin/vim
+[url "https://github"]
+	insteadOf = git://github
+	
+[alias]
+    co = checkout
+    c = commit -m 
+    st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p	
+
+
+
+
+
+[push]
+	default = simple
