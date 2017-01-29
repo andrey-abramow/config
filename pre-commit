@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Define colors
+source map.txt
 yellow='\e[93m'
 green='\e[32m'
 black='\e[40m'

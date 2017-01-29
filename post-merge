@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 # Define colors
+source map.txt
 yellow='\e[93m'
 green='\e[32m'
 black='\e[40m'
 # declare dotfiles locations map
-declare -A FILE_MAP=(
-     [".gitconfig"]="$HOME/.gitconfig"
-     [".gitignore"]="$HOME/.gitignore"
- )
 echo -e ${yellow}post merge hook works
 for FILE in "${!FILE_MAP[@]}" ; do
   echo -e ${green}$FILE ${FILE_MAP[$FILE]}${black}
