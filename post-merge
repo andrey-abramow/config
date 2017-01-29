@@ -3,14 +3,13 @@
 yellow='\e[93m'
 green='\e[32m'
 black='\e[40m'
-echo 'efefefef'
 # declare dotfiles locations map
 declare -A FILE_MAP=(
      [".gitconfig"]="$HOME/.gitconfig"
      [".gitignore"]="$HOME/.gitignore"
  )
-echo 'post merge hook works'
-for FILE in $(!FILE_MAP[@]); do
-  echo -e "${green}$FILE ${FILE_MAP[$FILE]}${black}";
+echo -e ${yellow}post merge hook works
+for FILE in "${!FILE_MAP[@]}" ; do
+  echo -e ${green}$FILE ${FILE_MAP[$FILE]}${black}
   cp "$FILE" ${FILE_MAP[$FILE]}
 done
