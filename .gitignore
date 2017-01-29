@@ -1,10 +1,10 @@
 node_modules
+bower_components
 dist
 .tmp/**/*
 *.swp
 *.dylib
 .sass-cache
-bower_components
 custom_plan.rb
 zeus.json
 .idea
