@@ -9,15 +9,8 @@ declare -A FILE_MAP=(
      [".gitconfig"]="$HOME/.gitconfig"
      [".gitignore"]="$HOME/.gitignore"
  )
-
-# select names of all changed files
-ALL_FILES=`git diff-index --name-only  HEAD~1`
-echo 'all files' ${ALL_FILES}
-for FILE in $(echo $ALL_FILES | tr '\n' ' '); do
-  if [ ! ${FILE_MAP[$FILE]} ]; then
-    echo -e "${yellow}file $FILE need to be in FILE_MAP"
-    exit 0
-  fi;
+echo 'post merge hook works'
+for FILE in $(!FILE_MAP[@]); do
   echo -e "${green}$FILE ${FILE_MAP[$FILE]}${black}";
   cp "$FILE" ${FILE_MAP[$FILE]}
 done
