@@ -3,7 +3,7 @@
 	email = abramow.andrey@gmail.com
 [core]
 	autocrlf = input
-	excludesfile = /Users/abramowandrey/.gitignore
+	excludesfile = $HOME/.gitignore
 	editor = /usr/bin/vim
 [url "https://github"]
 	insteadOf = git://github
