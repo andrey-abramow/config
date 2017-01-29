@@ -3,7 +3,7 @@
 yellow='\e[93m'
 green='\e[32m'
 black='\e[40m'
-
+echo 'efefefef'
 # declare dotfiles locations map
 declare -A FILE_MAP=(
      [".gitconfig"]="$HOME/.gitconfig"
