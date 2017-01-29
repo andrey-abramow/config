@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
 # Define colors
 source map.txt
+# here defined FILE_MAP
 yellow='\e[93m'
 green='\e[32m'
 black='\e[40m'
-
-# declare dotfiles locations map
-declare -A FILE_MAP=(
-     [".gitconfig"]="$HOME/.gitconfig"
-     [".gitignore"]="$HOME/.gitignore"
- )
 
 # select names of all changed files
 ALL_FILES=`git diff-index --name-only  HEAD`

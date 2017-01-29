@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+
 " Allow us to use Ctrl-s and Ctrl-q as keybinds
 filetype plugin on            " required
 syntax enable
