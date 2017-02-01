@@ -1,8 +1,11 @@
 set nocompatible              " be iMproved, required
-
+set macmeta
 " Allow us to use Ctrl-s and Ctrl-q as keybinds
 filetype plugin on            " required
 syntax enable
+
+noremap <c-s-up> :call feedkeys( line('.')==1 ? '' : 'ddkP' )<CR>
+noremap <c-s-down> ddp
 
 inoremap jk <ESC>
 let mapleader = "z"

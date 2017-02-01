@@ -12,6 +12,7 @@
     co = checkout
     c = commit -m
     a = add .
+    rs = reset --soft HEAD~1
     st = status
 	br = branch
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
