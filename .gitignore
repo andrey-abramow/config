@@ -7,4 +7,4 @@ dist
 .sass-cache
 custom_plan.rb
 zeus.json
-.idea
+.idea/**/*
