@@ -1,7 +1,6 @@
 declare -A FILE_MAP=(
-     [".gitconfig"]="$HOME/.gitconfig"
-     [".gitignore"]="$HOME/.gitignore"
-     [".vimrc"]="$HOME/.vimrc"
-     [".bashrc"]="$HOME/.bashrc"  
-  )
-
+   [".gitconfig"]="$HOME/.gitconfig"
+   [".gitignore"]="$HOME/.gitignore"
+   [".vimrc"]="$HOME/.vimrc"
+   [".bashrc"]="$HOME/.bashrc"
+)

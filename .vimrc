@@ -23,6 +23,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'flazz/vim-colorschemes'
+
 " FOR FILE SEARCH
 " SILVER_SEARCH
 let g:ackprg = 'ag --nogroup --nocolor --column'

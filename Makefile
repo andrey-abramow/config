@@ -1,4 +1,5 @@
 ROOT_DIR  := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+
 HOOKS_DIR := ${ROOT_DIR}/.git/hooks
 
 HOOKS = pre-commit post-merge
