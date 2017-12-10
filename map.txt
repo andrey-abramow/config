@@ -3,4 +3,6 @@ declare -A FILE_MAP=(
    [".gitignore"]="$HOME/.gitignore"
    [".vimrc"]="$HOME/.vimrc"
    [".bashrc"]="$HOME/.bashrc"
+   [".tmux.conf"]="$HOME/.tmux.conf"
+   [".tmux.conf.local"]="$HOME/.tmux.conf.local"
 )
