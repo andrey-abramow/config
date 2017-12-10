@@ -8,3 +8,4 @@ dist
 custom_plan.rb
 zeus.json
 .idea/**/*
+*.log
