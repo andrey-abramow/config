@@ -181,21 +181,17 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-"nnoremap th  :tabfirst<CR>
-nnoremap tj  :tabnext<CR>
-nnoremap tk  :tabprev<CR>
-"nnoremap tl  :tablast<CR>
-"nnoremap tt  :tabedit<Space>
-"nnoremap tn  :tabnext<Space>
-"nnoremap tm  :tabm<Space>
-"nnoremap td  :tabclose<CR>
+
+" buffers shortcuts
+nnoremap <space>h  :bprevious<CR>
+nnoremap <space>l  :bnext<CR>
 
 " FOR COMMENTS SHORTCUTS
 Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'terryma/vim-multiple-cursors'
 " >>> KEY_MAP
-" roggle tabs
+" rogglr tabs
 " switch between windows with Cmd-[H,J,K,L]
 map <Leader>h :vertical resize -50<cr>
 nnoremap <Leader>k :resize +50<cr>
