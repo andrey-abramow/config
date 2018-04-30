@@ -124,11 +124,16 @@ Plugin 'maxmellon/vim-jsx-pretty'
 let g:jsx_ext_required = 0
 """"""""""""""" REACT JSX """"""""""""""""""
 
+""""""""""""""" VUE """"""""""""""""""
+Plugin 'posva/vim-vue'
+""""""""""""""" VUE """"""""""""""""""
+
 """""""""""""""" SNIPPETS """"""""""""""""""
  " https://github.com/SirVer/ultisnips
 Plugin 'SirVer/ultisnips'
  " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
+
 
 let g:UltiSnipsExpandTrigger="<Leader><tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
